@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+#define el endl;
+
+int main()
+{
+   
+   int t;
+   cin>>t;
+   while(t--){
+       int n, sum;
+       cin>> n;
+       int m = n;
+       int fir;
+       int last = n%10;
+       for(int i=0; i<m; i++)
+       {
+           
+           if(n == n%10)
+           {
+               fir=n;
+           }else
+           n/=10;
+       }
+       sum = fir + last;
+       cout<< sum << endl;
+       
+   }
+   
+return 0;
+
+}
